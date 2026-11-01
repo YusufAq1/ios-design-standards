@@ -1,0 +1,12 @@
+{
+  "name": "ios-design-standards",
+  "description": "Apple Human Interface Guidelines (iOS and iPadOS), App Store Review Guidelines and App Store asset specs as a Claude skill for designing and reviewing iPhone and iPad apps.",
+  "version": "1.0.0",
+  "author": {
+    "name": "YusufAq1"
+  },
+  "homepage": "https://github.com/YusufAq1/ios-design-standards",
+  "repository": "https://github.com/YusufAq1/ios-design-standards",
+  "license": "MIT",
+  "keywords": ["ios", "ipados", "human-interface-guidelines", "app-store", "design", "swiftui", "uikit", "accessibility"]
+}

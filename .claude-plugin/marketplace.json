@@ -1,0 +1,19 @@
+{
+  "name": "ios-design-standards",
+  "owner": {
+    "name": "YusufAq1"
+  },
+  "metadata": {
+    "description": "Apple design and App Store standards for iPhone and iPad apps, as a Claude skill.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ios-design-standards",
+      "source": "./plugins/ios-design-standards",
+      "description": "Apple Human Interface Guidelines (iOS and iPadOS), App Store Review Guidelines and App Store asset specs for designing and reviewing iPhone and iPad apps.",
+      "version": "1.0.0",
+      "category": "design"
+    }
+  ]
+}
