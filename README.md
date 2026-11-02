@@ -20,7 +20,11 @@ Claude loads the skill automatically when you're working on an iOS or iPadOS app
 - reviews existing screens and flows, flagging **Must fix** (App Review rejection risks, accessibility failures) vs. **Should fix** (HIG best practices), each with the rule and a fix
 - runs an always-check list of the most common problems before going deeper
 
-You can also invoke it directly: `/ios-design-standards review this onboarding flow`.
+### Before and after
+
+Get your app iOS-ready and give it the best chance of passing App Review on the first try.
+
+![Illustrative mockups of four iPhone screens for a fictional habit tracker. In the Before row, the home, paywall, camera permission and settings screens have tiny controls, low-contrast text, a hidden yearly charge, a vague permission message and missing options, each marked with a red X. In the After row, the same screens use standard iOS layouts, readable text, clear pricing and trial terms, a specific permission message, and Restore Purchases, Terms, Privacy and Delete Account, each marked with a green check.](docs/images/before-after.png)
 
 ### Install
 
@@ -47,6 +51,49 @@ cp -r ios-design-standards/plugins/ios-design-standards/skills/ios-design-standa
 Or copy it into a project's `.claude/skills/` folder to share it with everyone working on that repo.
 
 **Claude apps (claude.ai / desktop)** — zip the `ios-design-standards` folder (the one containing `SKILL.md`) and upload it under **Settings › Capabilities › Skills**.
+
+### Use
+
+**Automatically** — ask for iOS or iPadOS work as you normally would, and Claude loads the skill when it's relevant. You don't need to mention it:
+
+```text
+Build a SwiftUI settings screen for my habit tracker app.
+```
+
+**Directly** — call the skill by name when you want to be sure it's applied. The command depends on how you installed it:
+
+| Installed as | Command |
+|---|---|
+| Plugin | `/ios-design-standards:ios-design-standards` |
+| Manual copy | `/ios-design-standards` |
+
+Add your request after the command:
+
+```text
+/ios-design-standards:ios-design-standards review this onboarding flow
+```
+
+In the Claude apps, ask Claude to use the skill by name, such as "Use the ios-design-standards skill to review this screen."
+
+**Example requests**
+
+| Goal | Try asking |
+|---|---|
+| Review a screen | "Review `SettingsView.swift` against Apple's guidelines." |
+| Critique a design | "Here's a mockup of my home screen. What should I fix for iPhone and iPad?" |
+| Choose a component | "Should this filter be a segmented control, a menu or a sheet?" |
+| Check accessibility | "Check this screen for Dynamic Type, VoiceOver and contrast problems." |
+| Write UI copy | "Write the camera permission prompt for my scanning feature." |
+| Plan a paywall | "Design a subscription paywall that will pass App Review." |
+| Find rejection risks | "What could get this app rejected? It has social login and user-generated posts." |
+| Prepare for the App Store | "What screenshot sizes and metadata limits do I need for my submission?" |
+
+**Reading the results** — reviews list each issue with the rule behind it, its source page or guideline number, and a suggested fix:
+
+- **Must fix:** App Review rejection risks, accessibility failures and broken platform behavior
+- **Should fix:** Human Interface Guidelines best practices
+
+The skill is a guide and doesn't guarantee App Review approval. Before you submit, check the source links, since Apple updates these pages regularly.
 
 ### Layout
 
