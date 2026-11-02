@@ -2,6 +2,8 @@
 
 A [Claude Code](https://claude.com/claude-code) plugin and Claude skill.
 
+Get your app iOS-ready and give it the best chance of passing App Review on the first try.
+
 ## ios-design-standards
 
 A skill that keeps Claude aligned with Apple's standards while you design, build or review iPhone and iPad apps. It condenses three Apple sources into iOS- and iPadOS-focused references:
@@ -22,7 +24,6 @@ Claude loads the skill automatically when you're working on an iOS or iPadOS app
 
 ### Before and after
 
-Get your app iOS-ready and give it the best chance of passing App Review on the first try.
 
 ![Illustrative mockups of four iPhone screens for a fictional habit tracker. In the Before row, the home, paywall, camera permission and settings screens have tiny controls, low-contrast text, a hidden yearly charge, a vague permission message and missing options, each marked with a red X. In the After row, the same screens use standard iOS layouts, readable text, clear pricing and trial terms, a specific permission message, and Restore Purchases, Terms, Privacy and Delete Account, each marked with a green check.](docs/images/before-after.png)
 
